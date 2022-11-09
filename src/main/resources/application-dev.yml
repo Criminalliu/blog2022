@@ -69,8 +69,16 @@ swagger:
   show: true
 
 qiniu:
-  accesskey: "9dZZZ5BCBkBlQ37Ib-umc747AsVNxsMjECWBBE1F"
-  serectkey: "oU0v9-zsDkRhy-r8Shxc6RKLRyw-IYgD6uUn-aqZ"
+#  accesskey: "9dZZZ5BCBkBlQ37Ib-umc747AsVNxsMjECWBBE1F"
+#  serectkey: "oU0v9-zsDkRhy-r8Shxc6RKLRyw-IYgD6uUn-aqZ"
+  accesskey: "eYCgC5CeXG_a4SaZmIbgx5fGHyWvYX5S8K_0O3pO"
+  serectkey: "mZMzdwD53mS29PR06InLe0lPkZ_m_KjJU2XHoSF4"
   bucket: "liu1nong"
   cdn:
-    url: "qy6lrr5ed.hb-bkt.clouddn.com/"
+#    url: "qy6lrr5ed.hb-bkt.clouddn.com/"
+    url: ""
+root:
+#    path: "F:\\my-site-master\\src\\main\\resources\\static\\site\\images";
+  path: "/home/yinong/"
+allow:
+  suffix: ".bmp.jpg.jpeg.png.gif.pdf.doc.zip.rar.gz"

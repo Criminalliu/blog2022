@@ -7,6 +7,7 @@ import cn.yinong.model.UserDomain;
 import cn.yinong.service.attach.AttAchService;
 import cn.yinong.utils.TaleUtils;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -22,9 +23,11 @@ public class LocalService {
     @Autowired
     private AttAchService attAchService;
 
-    public final String rootPath = "F:\\my-site-master\\src\\main\\resources\\static\\site\\images";
+    @Value("${root.path}")
+    private String rootPath;
 
-    public final String allowSuffix = ".bmp.jpg.jpeg.png.gif.pdf.doc.zip.rar.gz";
+    @Value("${allow.suffix}")
+    private String allowSuffix;
 
     public AttAchDomain localUpLoad(MultipartFile file, HttpServletRequest request) throws IOException {
 

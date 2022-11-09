@@ -67,6 +67,11 @@ pagehelper:
 
 swagger:
   show: false
+root:
+  #    path: "F:\\my-site-master\\src\\main\\resources\\static\\site\\images";
+  path: "/home/yinong/"
+allow:
+  suffix: ".bmp.jpg.jpeg.png.gif.pdf.doc.zip.rar.gz"
 
 
 
